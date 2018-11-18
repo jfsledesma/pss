@@ -1,0 +1,62 @@
+/*Fonts and colors*/
+
+	/*font-family: 'Libre Baskerville', serif;
+	font-family: 'Roboto', sans-serif;*/
+
+	/*PSS yellow rgba(249, 231, 159, .65)*/
+	/*Off white 250,235,215*/
+	/*PSS Umber 175, 96, 26*/
+	/*PSS Dark Gold 183, 149, 11*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Libre Baskerville', serif;
+}
+
+#bg {
+	padding: 0;
+	background-image: url("../images/burm.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+}
+
+.thumb {
+	width: 100%;
+}
+
+#main1 .row {
+	text-align: center;
+
+}
+
+#main1 .card {
+	background-color: rgba(175, 96, 26, .15);
+}
+
+#main1 .row p {
+	text-align: left;
+/*	font-family: 'Roboto', sans-serif;*/
+}
+
+.navbar {
+	background-color: rgba(249, 231, 159, .85);
+}
+
+#topnavitems {
+	float: right;
+}
+
+.navbar-brand {
+	font-family: 'Libre Baskerville', serif;
+}
+
+#main1 {
+	background-color: rgba(250,235,215,.55);
+	transition: width 1.5s;
+}
+
+footer {
+	background-color: rgba(183, 149, 11,.65);
+}
