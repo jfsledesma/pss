@@ -9,14 +9,16 @@
 	<title>Philippine Snake Society</title>
 
 	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans" rel="stylesheet">
 
 	<!-- External CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -24,56 +26,84 @@
 <div id="bg" class="container-fluid"> <!-- background wrapper -->
 	
 	<!-- header / navbar -->
-	<nav class="navbar navbar-expand-md navbar-light">
-		<a class="navbar-brand">PH Snake Society</a>
-		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav">
-	    	<span class="navbar-toggler-icon"></span>
-	    </button>
-    	<div class="collapse navbar-collapse" id="topnav">
-		    <ul id="topnavitems" class="navbar-nav ml-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">About</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">FAQs</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Snakes of the Philippines</a>
-		      </li>
-		    </ul>
- 		</div>
+	<nav id="brandnav" class="navbar navbar-visible-md navbar-light p-0 pb-0">
+			<a id="dbrand" class="navbar-brand center">Philippine Snake Society</a>
+	</nav>	
+
+	<nav class="navbar navbar-expand-md navbar-light p-md-0 p-2">
+		 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a id="mbrand" class="navbar-brand m-0">Philippine Snake Society</a>
+			<div id="topnav" class="collapse navbar-collapse">
+				<ul class="navbar-nav m-md-auto">
+					<li class="nav-item ml-md-3">
+						<a class="nav-link" href="about.html">About us</a>
+					</li>
+					<li class="nav-item ml-md-3">
+						<a class="nav-link" href="snakes.html">Snakes of the Philippines</a>
+					</li>					
+					<li class="nav-item ml-md-3">
+						<a class="nav-link" href="faq.html">FAQs</a>
+					</li>					
+					<li class="nav-item ml-md-3">
+						<a class="nav-link" href="contact.html">Contact us</a>
+					</li>
+				</ul>
+			</div>
 	</nav>
+
 	<!-- home content -->
-	<div id="main" class="container col-lg-8 offset-lg-2">
-		<div class="row pt-2">
-			<div class="card col-md-4 offset-md-1 mb-4 p-4">
-				<img class="thumb mb-1" src="assets/images/motley.jpg">
-				<h3>About us</h2>
-			</div>
-			<div class="card col-md-4 offset-md-2 mb-4 p-4">
-				<img class="thumb mb-1" src="assets/images/motley.jpg">
-				<h3>Snakes of the PH</h2>
-			</div>
+	<div id="main" class="medhome container col-lg-8 offset-lg-2">
+		<div class="row pt-lg-2 pt-md-1">
+			<a class="divwrapper col-md-6 mb-md-2 col-6 p-md-2 p-1" href="about.html">
+				<div class="homethumb">
+					<img class="thumb" src="assets/images/sunglow.jpg">
+					<h3>About us</h3>
+				</div>
+			</a>
+			<a class="divwrapper col-md-6 mb-md-2 col-6 p-md-2 p-1" href="snakes.html">
+				<div class="homethumb">
+					<img class="thumb" src="assets/images/ball.jpg">
+					<h3>Snakes of the PH</h3>
+				</div>
+			</a>
 		</div>
 		<div class="row">
-			<div class="card col-md-4 offset-md-1 mb-4 p-4">
-				<img class="thumb mb-1" src="assets/images/motley.jpg">
-				<h3>FAQs</h2>
-			</div>
-			<div class="card col-md-4 offset-md-2 mb-4 p-4">
-				<img class="thumb mb-1" src="assets/images/motley.jpg">
-				<h3>Contact us</h2>
-			</div>
+			<a class="divwrapper col-md-6 mb-md-2 col-6 p-md-2 p-1" href="faq.html">
+				<div class=" homethumb">
+					<img class="thumb" src="assets/images/motley.jpg">
+					<h3>FAQs</h3>
+				</div>
+			</a>
+			<a class="divwrapper col-md-6 mb-md-2 col-6 p-md-2 p-1" href="contact.html">
+				<div class="homethumb">
+					<img class="thumb" src="assets/images/rainbow.jpg">
+					<h3>Contact us</h3>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div id="mobmain" class="container row m-0">
+		<div class="row col-12 pt-2 m-0">
+<!-- 			<h6 class="col-12 p-0">Welcome to the mobile site of the</h6>
+			<div class="hwrapper col-6 mt-3 ml-auto mr-auto">
+				<h1>Philippine</h1> 
+				<h1>Snake</h1> 
+				<h1>Society</h1>
+			</div> -->
+			<h1 class="mt-5">Welcome</h1>
+			<h2>to our mobile site</h2>
+			<h4 class="col-12 mt-4"><a href="about.html"><button class="btn welcomebtn">Learn more about us</button></a></h4>
+			<h6 class="col-12 mt-4 mb-3 p-0"> ... or use the top bar to navigate. </h6>	
 		</div>
 	</div>	
 	<!-- footer -->
 
 	<footer class="container-fluid">
 		<div class="row pt-2">
-			<div class="col-md-3 offset-md-2">
+			<div class="col-lg-4 offset-lg-2 col-md-6 col-12">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. </p>
 			</div>
@@ -82,8 +112,8 @@
 </div>
 	<!-- end background -->
 	<!-- js -->
-	<script src="assets/js/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
