@@ -1,0 +1,35 @@
+/*Fonts and colors*/
+
+	/*font-family: 'Libre Baskerville', serif;
+	font-family: 'Open Sans', sans-serif;	*/
+
+	/*PSS yellow rgba(249, 231, 159, .65)*/
+	/*Off white 250,235,215*/
+	/*PSS Umber 175, 96, 26*/
+	/*PSS Dark Gold 183, 149, 11*/
+	/*PSS Brown rgb(51, 25, 0)*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color: transparent;	
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(51, 25, 0);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Libre Baskerville', serif;
+	color: rgb(51, 25, 0);
+	width: 100%;
+}
+
+.snake {
+	margin-bottom: 10px;
+}
