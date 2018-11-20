@@ -141,7 +141,9 @@ display: none;
 footer {
 	background-color: rgba(183, 149, 11,.85);
 	color: rgb(250,235,215);
+	position: fixed;
 	height: 10vh;
+	bottom: 0;
 	overflow: scroll;
 }
 
@@ -205,14 +207,16 @@ button[data-target*="#ans"]:hover {
 	transition: color .75s;
 }
 
-/*gallery*/
-
-#galleryseparator {
-	border-right: 2px solid rgb(51, 25, 0);
+div[id*="ques"]{
+	overflow: hidden;
 }
+
+/*gallery*/
 
 #gallmain {
 	padding-top: 7.5vh;
+	max-height: 70vh;
+	overflow: scroll;
 }
 
 .gbox {
@@ -231,12 +235,32 @@ button[data-target*="#ans"]:hover {
 }
 
 #conwrap {
-	transform: translateY(7.5vh);
+	min-height: 40vh;
+	max-height: 100vh;
 }
 
-button[type="submit"] {
+#conwrap a {
+	color: rgb(175, 96, 26);
+	transition: color .75s;
+}
+
+#conwrap a:hover {
+	color: rgb(51, 25, 0);
+	transition: color .75s;
+}
+
+#contactform button {
 	border-radius: 0%;
+	margin-left: 2px;
 	border: 2px solid rgba(250,235,215, .15);
+}
+
+.socfoot a {
+	font-size: 28px;
+}
+
+#tabcarousel {
+	display: none;
 }
 
 /*mqueries*/
@@ -267,7 +291,13 @@ button[type="submit"] {
 		display: none;
 	}
 
+	#galleryseparator {
+		border-right: 2px solid rgb(51, 25, 0);
+	}
+
 }
+
+/*tablet*/
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
 	.thumb {
@@ -293,20 +323,38 @@ button[type="submit"] {
 		width: 40%;
 	}
 
+	.navbar {
+		height: 5vh;
+	}
+
+	#main {
+		min-height: 80vh;
+	}
+
+	#dtnav{
+		display: none;
+	}
+
 	.homethumb h3 {
 		position: absolute;
 		text-align: right;
 		opacity: 1;
 		background-image: linear-gradient(to left, rgba(175, 96, 26, 1), rgba(175, 96, 26, .10));
-		bottom: -2.5%;
-		right: 2.5%;
-		width: 24vw;
+		bottom: -1%;
+		right: .75%;
+		width: 70vw;
 		color: rgb(250,235,215);
-		font-size: 2.5vw;
+		font-size: 40px;
 	}
 
 	#greeter {
 		padding: 24px;
+		height: 25vh;
+		bottom: 8vh;
+	}
+
+	#greeter p {
+		font-size: 18px;
 	}
 }
 
@@ -316,6 +364,10 @@ button[type="submit"] {
 		font-family: 'Libre Baskerville', serif;
 		color: rgb(51, 25, 0);
 		width: 100%;
+	}
+
+	#main {
+		height: 75vh;
 	}
 
 	#mainhome h1, #mainhome h2, #mainhome h3, #mainhome h4, #mainhome h5, #mainhome h6 {

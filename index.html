@@ -57,7 +57,7 @@
 
 	<!-- home content -->
 	<div id="mainhome" class="medhome container-fluid col-lg-12">
-		<div class="row pt-0">
+		<div id="dtnav" class="row pt-0">
 			<a class="divwrapper col-lg-3 mb-lg-2 col-md-3 mb-md-0 col-6 p-0 m-0 animated fadeInDown" href="about.html">
 				<div class="homethumb">
 					<img class="thumb" src="assets/images/sunglow.jpg">
@@ -71,7 +71,7 @@
 				</div>
 			</a>
 			<a class="divwrapper col-lg-3 mb-lg-2 col-md-3 mb-md-0 col-6 p-0 m-0 animated fadeInDown" href="faq.html">
-				<div class=" homethumb">
+				<div class="homethumb">
 					<img class="thumb" src="assets/images/motleytn.jpg">
 					<h3>FAQs</h3>
 				</div>
@@ -83,6 +83,56 @@
 				</div>
 			</a>
 		</div>
+
+		<div id="tabcarousel" class="carousel slide w-75 ml-auto mr-auto mt-5" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="homethumb">
+						<a class="divwrapper" href="about.html">
+							<img class="thumb" src="assets/images/sunglow.jpg">
+						</a>
+							<h3>About us</h3>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="homethumb">
+						<a class="divwrapper" href="about.html">
+							<img class="thumb" src="assets/images/balltn.jpg">
+						</a>	
+							<h3>Snakes of the PH</h3>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class=" homethumb">
+						<a class="divwrapper" href="about.html">
+							<img class="thumb" src="assets/images/motleytn.jpg">
+						</a>	
+							<h3>FAQs</h3>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="homethumb">
+						<a class="divwrapper" href="about.html">
+							<img class="thumb" src="assets/images/rainbowtn.jpg">
+						</a>	
+							<h3>Contact us</h3>
+					</div>
+				</div>
+
+			</div>
+			<a class="carousel-control-prev" href="#tabcarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#tabcarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>	
+		</div>
+
 		<div class="row">
 			<div id="greeter" class="col-lg-6 offset-lg-6 col-md-8 offset-md-4 wshader p-lg-4 animated fadeInRight">
 				<h2 class="mb-2">Greetings!</h2>
@@ -152,10 +202,15 @@
 
 	<footer class="container-fluid">
 			<div class="row pt-2">
-				<div class="col-lg-4 offset-lg-2 col-md-6 col-12">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. </p>
-				</div>
+			<div class="col-lg-8 offset-lg-1 col-md-9 col-8">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+			</div>
+			<div class="socfoot col-lg-2 col-md-3 col-4 mt-0 ml-auto">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fas fa-envelope-square"></i></a>
+				<a href="#"><i class="fab fa-github-square"></i></a>
+			</div>
 			</div>
 	</footer>
 </div>
