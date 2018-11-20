@@ -37,12 +37,32 @@ a.divwrapper {
 }
 
 .wshader {
-	background-color: rgba(250,235,215,.45);	
+	background-color: rgba(250,235,215,.65);	
+}
+
+#jlanding {
+	background-color: rgba(250,235,215,.85);
+	text-align: center;	
+	width: 60vw;
+	height: 40vh;
+	margin-top: 17.5vh;
+}
+
+#jlanding a {
+	color: rgb(51, 25, 0);
+	font-size: 16px;
+}
+
+#landbutton {
+	font-size: 6em;
+	border: 1px solid rgb(51, 25, 0);
+	border-radius: 2.5%;
+	width: 20%;
 }
 
 #greeter {
 	position: absolute;
-	bottom: 17.5%;
+	bottom: 5vh;
 }
 
 #bg {
@@ -62,32 +82,37 @@ a.divwrapper {
 	opacity: .6;
 	transition: opacity .75s;
 	border: 4px solid rgb(249, 231, 159);
+	cursor: pointer;
+}
+
+.thumb:hover + h3 {
+	opacity: 1;
 }
 
 .thumb:hover {
 	opacity: 1;
 }
 
-
-.thumb:hover + h3 {
-	opacity: 1;
+.thumb > h3:hover .thumb {
+	opacity: 1;	
 }
 
 .homethumb h3 {
+	pointer-events : none;
 	position: absolute;
 	text-align: right;
 	transition: opacity .75s;
-	opacity: .25;
+	opacity: .45;
 	background-image: linear-gradient(to left, rgba(175, 96, 26, 1), rgba(175, 96, 26, .10));
-	bottom: -1%;
-	right: 0.75%;
+	bottom: -1.5%;
+	right: 1.0%;
 	width: 25vw;
 	color: rgb(250,235,215);
 }
 
 .navbar {
 	background-color: rgba(249, 231, 159, .85);
-	min-height: 6vh;
+	height: 5vh;
 }
 
 #topnav {
@@ -100,27 +125,118 @@ a.divwrapper {
 }
 
 #main {
-	min-height: 80vh;
+	height: 80vh;
+	overflow: scroll;
+}
+
+#mainhome {
+	height: 80vh;
+	overflow: scroll;
+}
+
+::-webkit-scrollbar {
+display: none;
 }
 
 footer {
 	background-color: rgba(183, 149, 11,.85);
 	color: rgb(250,235,215);
-	min-height: 8vh;
+	height: 10vh;
+	overflow: scroll;
 }
 
 nav#brandnav.homepage {
-	min-height: 12vh;
+	height: 10vh;
 }
 
 /*about*/
 	
 #abtmain {
-	background-color: rgba(250,235,215,.75);	
+	background-color: rgba(250,235,215,.75);
+	height: 80vh;
+	overflow: scroll;	
 }
 
 #abtpic {
 	width: 100%;
+}
+
+/*faq*/
+
+.faqsc {
+	width: 50vw;
+}
+
+li {
+	margin-bottom: 4px;
+}
+
+.faqhead {
+	text-align: center;
+}
+
+li a {
+	color: rgb(175, 96, 26);
+	transition: color .75s;
+}
+
+li a:hover {
+	color: rgb(51, 25, 0);
+	transition: color .75s;
+}
+
+li a {
+	color: rgb(175, 96, 26);
+	transition: color .75s;
+}
+
+li a:hover {
+	color: rgb(51, 25, 0);
+	transition: color .75s;
+}
+
+button[data-target*="#ans"]{
+	color: rgb(175, 96, 26);
+	transition: color .75s;
+}
+
+button[data-target*="#ans"]:hover {
+	color: rgb(51, 25, 0);
+	transition: color .75s;
+}
+
+/*gallery*/
+
+#galleryseparator {
+	border-right: 2px solid rgb(51, 25, 0);
+}
+
+#gallmain {
+	padding-top: 7.5vh;
+}
+
+.gbox {
+
+}
+
+#snakepic {
+	border: 2px solid rgb(51, 25, 0, .5)	
+}
+
+/*contact*/
+
+#ctext {
+	resize: none;
+	height: 16vh;
+}
+
+#conwrap {
+	transform: translateY(7.5vh);
+}
+
+button[type="submit"] {
+	border-radius: 0%;
+	border: 2px solid rgba(250,235,215, .15);
 }
 
 /*mqueries*/
@@ -139,11 +255,15 @@ nav#brandnav.homepage {
 		margin: 0 auto;
 	}
 
-	#mnav{
+	#mnav.athome{
 		display: none;
 	}
 
 	#mobmain {
+		display: none;
+	}
+
+	#mbrand {
 		display: none;
 	}
 
@@ -157,19 +277,36 @@ nav#brandnav.homepage {
 		border: 4px solid rgb(250,235,215);
 	}
 
+	#jlanding h2, h3 {
+		color: rgb(51, 25, 0);
+		width: 100%;
+		font-size: 16px;
+	}
+
+	#jlanding h1 {
+		color: rgb(51, 25, 0);
+		width: 100%;
+		font-size: 28px;
+	}
+
+	#landbutton {
+		width: 40%;
+	}
+
 	.homethumb h3 {
 		position: absolute;
 		text-align: right;
 		opacity: 1;
 		background-image: linear-gradient(to left, rgba(175, 96, 26, 1), rgba(175, 96, 26, .10));
-		bottom: 1%;
-		right: 3.5%;
-		width: 43.5vw;
+		bottom: -2.5%;
+		right: 2.5%;
+		width: 24vw;
 		color: rgb(250,235,215);
+		font-size: 2.5vw;
 	}
 
 	#greeter {
-		padding: 12px;
+		padding: 24px;
 	}
 }
 
@@ -177,11 +314,51 @@ nav#brandnav.homepage {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Libre Baskerville', serif;
+		color: rgb(51, 25, 0);
+		width: 100%;
+	}
+
+	#mainhome h1, #mainhome h2, #mainhome h3, #mainhome h4, #mainhome h5, #mainhome h6 {
+		font-family: 'Libre Baskerville', serif;
 		color: rgb(250,235,215);
 		width: 100%;
 	}
 
-	#main {
+	#jlanding {
+		height: 60vh;
+		margin-top: 10vh;
+		width: 100%;
+	}
+
+	#jlanding h2, h3, a {
+		color: rgb(51, 25, 0);
+		width: 100%;
+		font-size: 16px;
+	}
+
+	#jlanding h1 {
+		color: rgb(51, 25, 0);
+		font-size: 24px;
+	}
+
+	#landbutton {
+		border: 1px solid rgb(51, 25, 0);
+		font-size: 20px;
+		border-radius: 2.5%;
+		width: 80%;
+	}
+
+	nav#mnav {
+	height: 12vh;
+	z-index: 100;
+	}
+
+	.navbar-nav {
+		background-color: rgb(250,235,215);
+	}
+
+
+	#mainhome {
 		display: none;
 	}
 
@@ -190,32 +367,42 @@ nav#brandnav.homepage {
 	}
 
 	h1 {
-		font-size: 200%;
-
+		font-size: 36px;
 		text-align: center;		
 	}
 
 	h2 {
 		text-align: center;
-		font-size: 160%;
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 28px;
+		text-align: center;		
 	}
 
 	h4 {
-		font-size: 120%;
+		font-size: 24px;
 		text-align: center;	
+	}
+
+	h5{
+		font-size: 20px;
+		text-align: center;
+	}
+
+	h6 {
+		font-family: 'Open Sans', sans-serif;
 	}
 
 	#brandnav {
 		display: none;
 	}
 
-	#mbrand{
-		font-size: 120%;
+	#mbrand {
+		font-size: 20px;
+		width: 80%;
 		font-style: normal;
-	}
-
-	.navbar {
-
 	}
 
 	button.navbar-toggler {
@@ -254,8 +441,9 @@ nav#brandnav.homepage {
 		background-image: linear-gradient(to left, rgba(175, 96, 26, 1), rgba(175, 96, 26, .10));
 		bottom: -2%;
 		right: 1.5%;
-		width: 40vw;
+		width: 80vw;
 		color: rgb(250,235,215);
+		font-size: 8vw;
 	}
 
 }

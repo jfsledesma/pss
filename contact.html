@@ -21,25 +21,25 @@
 <body>
 	<nav id="brandnav" class="navbar navbar-visible-md navbar-light p-0 pb-0">
 			<a id="dbrand" class="center navbar-brand" href="index.html">
-				<i class="fas fa-home faded"></i> Philippine Snake Society
+				Philippine <i class="fas fa-dragon"></i>nake Society
 			</a>
 	</nav>	
-
-	<nav class="navbar navbar-expand-md navbar-light p-md-0 p-2">
+ 
+	<nav id="mnav" class="navbar navbar-expand-md navbar-light p-md-0 p-2">
 		 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a id="mbrand" class="navbar-brand m-0" href="index.html">Philippine Snake Society</a>
+			<a id="mbrand" class="navbar-brand m-0" href="index.html">Philippine <i class="fas fa-dragon"></i>nake Society</a>
 			<div id="topnav" class="collapse navbar-collapse">
 				<ul class="navbar-nav m-md-auto">
 					<li class="nav-item ml-md-3">
 						<a class="nav-link" href="about.html">About us</a>
 					</li>
 					<li class="nav-item ml-md-3">
-						<a class="nav-link" href="#">Snakes of the Philippines</a>
+						<a class="nav-link" href="snakes.html">Snakes of the Philippines</a>
 					</li>					
 					<li class="nav-item ml-md-3">
-						<a class="nav-link" href="#">FAQs</a>
+						<a class="nav-link" href="faq.html">FAQs</a>
 					</li>					
 					<li class="nav-item ml-md-3">
 						<a class="nav-link active" href="contact.html">Contact us</a>
@@ -51,7 +51,28 @@
 
 	<!-- main contact -->
 	
+	<div id="main" class="container">
+		<div id="conwrap" class="row wshader pt-4 h-80">
+			<div class="col-md-5 offset-lg-1 my-auto">
+				<h3>Feel free to contact us</h3>
+				<p>for anything snake related, whether they be concerns, questions,
+				memes, friendly messages and what-have-you.</p>
+				<p>Please check out our <a href="faq.html">FAQs</a> before you send a message;
+				we may already have the answer you're looking for there.</p>				
+			</div>
+			<div class="col-md-4 offset-lg-1 my-auto">
+				<form class="form-horizontal">
+					<label class="control-label">Your name* <input class="form-control" type="text" name="cname" required></label>
+					<label class="control-label">Your email* <input class="form-control" type="email" name="cmail" required></label>
+					<label class="control-label">Do you have a picture for us? <input class="form-control btn btn-default" type="file" name="photo"></label>
+					<input class="form-control mb-1" type="text" name="cname" placeholder="Add a subject line (optional)">
+					<textarea id="ctext" class="form-control mb-2" placeholder="Your message here...*"></textarea>
+					<button type="submit" class="p-2 mb-2 float-right">Submit</button>					
+				</form>
+			</div>
+		</div>
 
+	</div>
 
 	<!-- footer -->
 
