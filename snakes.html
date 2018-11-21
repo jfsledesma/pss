@@ -5,12 +5,18 @@
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<meta http-equiv="XU-A-Compatible" content="Ie=Edge">
 	<title>Philippine Snake Society</title>
+	
+	<!-- fav icon -->
+	<link rel="icon" type="img/gif/png" href="assets/images/fav.png">
 
 	<!-- Fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- animate -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans" rel="stylesheet">
@@ -20,16 +26,16 @@
 </head>
 <body>
 	<nav id="brandnav" class="navbar navbar-visible-md navbar-light p-0 pb-0">
-			<a id="dbrand" class="center navbar-brand" href="index.html">
-				Philippine <i class="fas fa-dragon"></i>nake Society
+			<a id="dbrand" class="mx-auto navbar-brand hbrand" href="index.html">
+				Philippine <i class="fas fa-dragon hbrand"></i>nake Society
 			</a>
 	</nav>	
 
-	<nav id="mnav" class="navbar navbar-expand-md navbar-light mt-0 p-md-0 p-2">
-		 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav">
+	<nav id="mnav" class="navbar navbar-expand-md navbar-light mt-0 p-md-0">
+		 	<button class="navbar-toggler pl-2" type="button" data-toggle="collapse" data-target="#topnav">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a id="mbrand" class="navbar-brand m-0" href="index.html">Philippine <i class="fas fa-dragon"></i>nake Society</a>
+			<a id="mbrand" class="navbar-brand m-auto" href="index.html">Philippine <i class="fas fa-dragon"></i>nake Society</a>
 			<div id="topnav" class="collapse navbar-collapse">
 				<ul class="navbar-nav m-md-auto">
 					<li class="nav-item ml-md-3">
@@ -50,8 +56,8 @@
 <div id="bg" class="container-fluid"> <!-- background wrapper -->
 
 	<!-- main contact -->
-	<div id="main" class="container-fluid wshader">
-		<div id="gallmain" class="row">
+	<div id="main" class="wshader">
+		<div id="gallmain" class="row animated fadeInLeft delay2">
 
 			<div id="galleryseparator" class="col-md-6 col-12">
 				<div class="row">
@@ -66,32 +72,38 @@
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
 						<a href="snakefo.html#phcob" target="snakeshow">						
-						<img src="assets/images/sunglow.jpg" class="w-100">
-						<h6>Philippine Cobra</h6>
+							<img src="assets/images/sunglow.jpg" class="w-100">
+							<h6>Philippine Cobra</h6>
 						</a>
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
 						<a href="snakefo.html#samcob" target="snakeshow">
-						<img src="assets/images/sunglow.jpg" class="w-100">
-						<h6>Samar Cobra</h6>
+							<img src="assets/images/sunglow.jpg" class="w-100">
+							<h6>Samar Cobra</h6>
 						</a>
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
-						<img src="assets/images/sunglow.jpg" class="w-100">
-						<h6>Red-tailed Rat Snake</h6>
+						<a href="snakefo.html#rat" target="snakeshow">
+							<img src="assets/images/sunglow.jpg" class="w-100">
+							<h6>Red-tailed Rat Snake</h6>
+						</a>
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
-						<img src="assets/images/sunglow.jpg" class="w-100">
-						<h6>Pit Vipers</h6>
+						<a href="snakefo.html#viper" target="snakeshow">
+							<img src="assets/images/sunglow.jpg" class="w-100">
+							<h6>Pit Vipers</h6>
+						</a>
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
-						<img src="assets/images/sunglow.jpg" class="w-100">
-						<h6>Sea Kraits</h6>
+						<a href="snakefo.html#krait" target="snakeshow">
+							<img src="assets/images/sunglow.jpg" class="w-100">
+							<h6>Sea Kraits</h6>
+						</a>
 					</div>
 				</div>
 			</div>
 		
-			<div id="galframe" class="col-md-6 col-0">
+			<div id="galframe" class="col-md-6 mt-md-0 mt-2 col-12 animated fadeInRight delay4">
 				<iframe src="snakefo.html" allowtransparency="true" name="snakeshow"></iframe>
 			</div>
 		

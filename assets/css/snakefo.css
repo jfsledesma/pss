@@ -30,6 +30,44 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
-.snake {
-	margin-bottom: 10px;
+.snakepic {
+	border: 2px solid rgb(51, 25, 0, .5);
+	width: 100%;
+}
+
+#snakebody {
+	padding-right: 0;
+}
+
+img {
+	padding-right: 0;
+}
+
+.row img:hover {
+	border-image: radial-gradient(rgb(51, 25, 0), rgba(51, 25, 0, .45));
+	border-image-slice: 1;
+	border-width: 8px;
+}
+
+button[data-dismiss="modal"] span {
+	position: absolute;
+	top:1%;
+	right: .5%;
+	background-color: rgb(250,235,215);
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+	.modal-sm {
+		width: 80%;
+	}
+
+}
+@media only screen and (max-width: 425px) {
+	#snakebody {
+		padding-bottom: 40vh;
+	}
 }

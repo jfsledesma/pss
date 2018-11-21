@@ -22,18 +22,34 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
-a > h1 {
+.hbrand {
 	color: rgb(183, 149, 11);
 	transition: color .75s;
 }
 
-a > h1:hover {
+.hbrand:hover > i {
 	color: rgb(51, 25, 0);
-	transition: color .75s;
+}
+
+a > h1.homeactive, h1.homeactive i {
+	color: rgb(51, 25, 0);
+}
+
+	/*a > h1.homeactive {
+		text-decoration: underline;
+	}*/
+
+a.nav-link:hover {
+	font-weight: bold;
 }
 
 a.divwrapper {
 	width: 100%;
+}
+
+a.active {
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 iframe {
@@ -59,6 +75,25 @@ iframe {
 	font-size: 16px;
 }
 
+.delay1 {
+	animation-delay: .25s;
+}
+
+
+.delay2 {
+	animation-delay: .75s;
+}
+
+
+.delay3 {
+	animation-delay: 1.25s;
+}
+
+
+.delay4 {
+	animation-delay: 1.75s;
+}
+
 #landbutton {
 	font-size: 6em;
 	border: 1px solid rgb(51, 25, 0);
@@ -66,8 +101,18 @@ iframe {
 	width: 20%;
 }
 
+#landbutton {
+	transition: color, background-color 1s
+}
+
+#landbutton:hover {
+	color: rgb(250,235,215);
+	background-color: rgb(51, 25, 0);
+}
+
 #greeter {
 	position: absolute;
+	box-shadow: 1px 1px rgba(249, 231, 159, .65);
 	bottom: 5vh;
 }
 
@@ -87,7 +132,8 @@ iframe {
 	width: 100%;
 	opacity: .6;
 	transition: opacity .75s;
-	border: 4px solid rgb(249, 231, 159);
+/*	border: 2px solid rgb(249, 231, 159);*/
+	box-shadow: 2px 2px rgba(249, 231, 159, .65);
 	cursor: pointer;
 }
 
@@ -110,8 +156,8 @@ iframe {
 	transition: opacity .75s;
 	opacity: .45;
 	background-image: linear-gradient(to left, rgba(175, 96, 26, 1), rgba(175, 96, 26, .10));
-	bottom: -1.5%;
-	right: 1.0%;
+	bottom: -8px;
+	right: 0px;
 	width: 25vw;
 	color: rgb(250,235,215);
 }
@@ -145,7 +191,7 @@ display: none;
 }
 
 footer {
-	background-color: rgba(183, 149, 11,.85);
+	background-color: rgb(183, 149, 11);
 	color: rgb(250,235,215);
 	position: fixed;
 	height: 10vh;
@@ -176,7 +222,7 @@ nav#brandnav.homepage {
 }
 
 li {
-	margin-bottom: 4px;
+	margin-bottom: 0;
 }
 
 .faqhead {
@@ -213,25 +259,24 @@ button[data-target*="#ans"]:hover {
 	transition: color .75s;
 }
 
+
 div[id*="ques"]{
-	overflow: hidden;
+	overflow: scroll;
 }
 
 /*gallery*/
 
 #gallmain {
 	padding-top: 7.5vh;
-	max-height: 70vh;
+	height: 70vh;
 	overflow: scroll;
 }
 
-.gbox {
-
+.snakeshow {
+	padding: 0;
 }
 
-#snakepic {
-	border: 2px solid rgb(51, 25, 0, .5)	
-}
+
 
 /*contact*/
 
@@ -262,10 +307,23 @@ label {
 	transition: color .75s;
 }
 
+#contactform input, textarea {
+	background-color: rgba(250,250,250, 1);
+	width: 100%;
+	border-radius: 0;
+	padding: 1%;
+}
+
 #contactform button {
 	border-radius: 0%;
 	margin-left: 2px;
+	background-color: rgba(250,235,215, 1);
 	border: 2px solid rgba(250,235,215, .15);
+}
+
+#contactform button.formclear {
+	border: none;
+	background-color: transparent;
 }
 
 .socfoot a {
@@ -276,9 +334,10 @@ label {
 	display: none;
 }
 
+
 /*mqueries*/
 
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 769px) {
 	.navline {
 		width: 100%;
 		float: left;
@@ -286,6 +345,13 @@ label {
 
 	#dbrand {
 		font-size: 160%;
+		color: rgb(183, 149, 11);
+		transition: color .75s;
+	}
+
+	#dbrand:hover {
+		color: rgb(51, 25, 0);
+		transition: color .75s;
 	}
 
 	.center {
@@ -312,12 +378,13 @@ label {
 
 /*tablet*/
 
+
 @media only screen and (min-width: 426px) and (max-width: 768px) {
 	.thumb {
 		width: 100%;
 		opacity: 1	;
 		transition: opacity .75s;
-		border: 4px solid rgb(250,235,215);
+		box-shadow: 2px 2px rgba(249, 231, 159, .65);
 	}
 
 	#jlanding h2, h3 {
@@ -326,44 +393,73 @@ label {
 		font-size: 16px;
 	}
 
+	.center {
+		margin: 0 auto;
+	}
+
+	#mnav.athome{
+		display: none;
+	}
+
+	#mobmain {
+		display: none;
+	}
+
+	#mbrand {
+		display: none;
+	}
+
+/*
+	#tabcarousel {
+		display: block;
+		height: 30vh
+	}*/
+/*
+	#dtnav {
+		display: none;
+	}*/
+
+	#mnav.athome {
+		display: none;
+	}
+
+	#mbrand {
+		display: none;
+	}
+
+
 	#jlanding h1 {
 		color: rgb(51, 25, 0);
 		width: 100%;
 		font-size: 28px;
 	}
 
-	#landbutton {
-		width: 40%;
-	}
 
 	.navbar {
 		height: 5vh;
 	}
 
 	#main {
-		min-height: 80vh;
+		height: 80vh;
 	}
 
-	#dtnav{
-		display: none;
-	}
 
 	.homethumb h3 {
 		position: absolute;
 		text-align: right;
 		opacity: 1;
 		background-image: linear-gradient(to left, rgba(175, 96, 26, 1), rgba(175, 96, 26, .10));
-		bottom: -1%;
-		right: .75%;
-		width: 70vw;
+		bottom: -3%;
+		right: 0%;
+		width: 50vw;
 		color: rgb(250,235,215);
 		font-size: 40px;
 	}
 
 	#greeter {
 		padding: 24px;
-		height: 25vh;
-		bottom: 8vh;
+		height: 24vh;
+		bottom: 3vh;
 	}
 
 	#greeter p {
@@ -379,11 +475,11 @@ label {
 		width: 100%;
 	}
 
-	#main {
-		height: 75vh;
+	#mobmain {
+		height: 78vh;
 	}
 
-	#mainhome h1, #mainhome h2, #mainhome h3, #mainhome h4, #mainhome h5, #mainhome h6 {
+	#mobmain h1, #mobmain h2, #mobmain h3, #mobmain h4, #mobmain h5, #mobmain h6 {
 		font-family: 'Libre Baskerville', serif;
 		color: rgb(250,235,215);
 		width: 100%;
@@ -414,8 +510,8 @@ label {
 	}
 
 	nav#mnav {
-	height: 12vh;
-	z-index: 100;
+		height: 12vh;
+		z-index: 100;
 	}
 
 	.navbar-nav {
@@ -465,7 +561,7 @@ label {
 	}
 
 	#mbrand {
-		font-size: 20px;
+		font-size: 24px;
 		width: 80%;
 		font-style: normal;
 	}
@@ -473,6 +569,7 @@ label {
 	button.navbar-toggler {
 		padding: 0;
 		border:none;
+		height: 100%;
 	}
 
 	#mobmain {
@@ -488,11 +585,15 @@ label {
 		background-color: rgba(249, 231, 159, .85);
 	}
 
+	.mobilecenter {
+		text-align: center;
+	}
+
 	.thumb {
 		width: 100%;
 		opacity: 1	;
 		transition: opacity .75s;
-		border: 4px solid rgb(250,235,215);
+		box-shadow: 2px 2px rgba(249, 231, 159, .65);
 	}
 
 	.homethumb {
@@ -511,4 +612,31 @@ label {
 		font-size: 8vw;
 	}
 
+	a[class*="carousel-control"]{
+		height: 6em;
+		top: 25%;
+	}
+
+	#gallmain {
+		margin: 0;
+		margin-top: 5px;
+		padding: 0;
+		height: 77vh;
+		max-width: 100vw;
+	}
+
+
+	#galleryseparator {
+		margin-top: 0;
+		position: fixed;
+		height: 25vh;
+		border-bottom: 2px solid rgb(250,235,215);
+		overflow: scroll;
+	}
+
+	#galframe {
+		position: fixed;
+		top: 25vh;
+		height: 80vh;
+	}
 }
