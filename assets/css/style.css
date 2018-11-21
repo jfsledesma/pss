@@ -491,15 +491,16 @@ label {
 		width: 100%;
 	}
 
-	#jlanding h2, h3, a {
+	#jlanding h3 {
+		margin-top: 25%;
 		color: rgb(51, 25, 0);
 		width: 100%;
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	#jlanding h1 {
 		color: rgb(51, 25, 0);
-		font-size: 24px;
+		font-size: 32px;
 	}
 
 	#landbutton {
