@@ -575,6 +575,7 @@ label {
 
 	#mobmain {
 		background-color: rgba(175, 96, 26, .55);
+		min-height: 80vh;
 	}
 
 	#mobmain p {
