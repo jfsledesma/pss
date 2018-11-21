@@ -643,4 +643,8 @@ label {
 		height: 80vh;
 		overflow: scroll;
 	}
+
+	footer {
+		position: static;
+	}
 }
