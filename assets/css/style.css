@@ -631,16 +631,13 @@ label {
 
 	#galleryseparator {
 		margin-top: 0;
-		position: fixed;
-		height: 25vh;
+		height: 30vh;
 		border-bottom: 2px solid rgb(250,235,215);
 		overflow: scroll;
 	}
 
 	#galframe {
-		position: fixed;
-		top: 25vh;
-		height: 80vh;
+		height: 70vh;
 		overflow: scroll;
 	}
 
