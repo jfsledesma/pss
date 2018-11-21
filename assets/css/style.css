@@ -576,6 +576,7 @@ label {
 	#mobmain {
 		background-color: rgba(175, 96, 26, .55);
 		min-height: 80vh;
+		overflow: scroll;
 	}
 
 	#mobmain p {
@@ -640,5 +641,6 @@ label {
 		position: fixed;
 		top: 25vh;
 		height: 80vh;
+		overflow: scroll;
 	}
 }
