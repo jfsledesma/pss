@@ -316,11 +316,11 @@ button[data-dismiss="modal"] span {
 	width: 100%;
 }
 
-.gbox {
+.gox {
 	text-align: center;
 }
 
-.gbox img:hover {
+.gox img:hover {
 	border-image: radial-gradient(rgb(51, 25, 0), rgba(51, 25, 0, .45));
 	border-image-slice: 1;
 	border-width: 4px;
