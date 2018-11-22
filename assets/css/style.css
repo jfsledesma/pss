@@ -639,6 +639,8 @@ label {
 	#galframe {
 		height: 47vh;
 		position: relative;
+		-webkit-overflow-scrolling: touch;
+  		overflow-y: scroll;
 	}
 
 	#galframe iframe {
