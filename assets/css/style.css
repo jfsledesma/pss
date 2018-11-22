@@ -638,7 +638,11 @@ label {
 
 	#galframe {
 		height: 70vh;
-		overflow: scroll;
+		position: relative;
+	}
+
+	#galframe iframe {
+		position: absolute;
 	}
 
 	footer {
