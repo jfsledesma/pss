@@ -597,6 +597,10 @@ label {
 		display: none;
 	}
 
+	#brandnav.landing {
+		display: block;
+	}
+
 	#mbrand {
 		font-size: 22px;
 		width: 80%;
