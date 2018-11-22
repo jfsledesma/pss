@@ -62,56 +62,220 @@
 <div id="bg" class="container-fluid"> <!-- background wrapper -->
 
 	<!-- main contact -->
-	<div id="main" class="wshader">
-		<div id="gallmain" class="row">		
+	<div id="main" class="wshader container-fluid">
+		<div id="gallmain">		
+			<div class="row">
+				<h2 class="text-center">Snakes of the Philippines</h2>
+				<h5 class="text-center mb-3">Click on a snake to learn more!</h5>
+			</div>
+			<div class="row">
+				<div class="gbox col-lg-4 col-6 mb-2">
+					<figure data-toggle="modal" data-target="#reticmod">
+						<img src="assets/images/retic.jpg" data-toggle="tooltip" title="Picture c/o Pixabay"  class="w-100">
+						<h3>Reticulated Python</h3>
+					</figure>
+				</div>
+				<div class="gbox col-lg-4 col-6 mb-2">
+					<figure data-toggle="modal" data-target="#phcobmod">						
+						<img src="assets/images/phcob.jpg" data-toggle="tooltip" title="Picture c/o Science Daily"  class="w-100">
+						<h3>Philippine Cobra</h3>
+					</figure>
+				</div>
+				<div class="gbox col-lg-4 col-6 mb-2">
+					<figure data-toggle="modal" data-target="#srcobmod">
+						<img src="assets/images/samarcobsm.jpg" data-toggle="tooltip" title="Picture c/o Pestpedia" class="w-100">
+						<h3>Samar Cobra</h3>
+					</figure>
+				</div>
+				<div class="gbox col-lg-4 col-6 mb-2">
+					<figure data-toggle="modal" data-target="#ratmod">
+						<img src="assets/images/rat.jpg" data-toggle="tooltip" title="Picture c/o Pixabay" class="w-100">
+						<h3>Red-tailed Rat Snake</h3>
+					</figure>
+				</div>
+				<div class="gbox col-lg-4 col-6 mb-2">
+					<figure data-toggle="modal" data-target="#vipermod">
+						<img src="assets/images/pitviper.jpg" data-toggle="tooltip" title="Picture c/o Pixabay" class="w-100">
+						<h3>Pit Vipers</h3>
+					</figure>
+				</div>
+				<div class="gbox col-lg-4 col-6 mb-2">
+					<figure data-toggle="modal" data-target="#kraitmod">
+						<img src="assets/images/seakrait.jpg" data-toggle="tooltip" title="Picture c/o Wikipedia" class="w-100">
+						<h3>Sea Kraits</h3>
+					</figure>
+				</div>
+			</div>
 
+	<!-- modals -->
 
-			<div id="galleryseparator" class="col-md-6 col-12 animated fadeInLeft delay2">
+	<div id="reticmod" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
 				<div class="row">
-					<h3 class="mb-md-4 mb-4 pl-md-3">Snakes of the Philippines</h3>
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+					<h3>Reticulated Python</h3>
+					<div class="col-md-6 col-7 order-2">
+						<img src="assets/images/retic.jpg" class="snakepic">
+						<p>Image courtesy of pixabay</p>
+					</div>
+					<div class="col-md-6 col-5 order-1">
+						<h5>Local name: <span>'Sawa'</span></h5>
+						<h5>Classification: <span>Endangered</span></h5>
+						<h5>Endemic: <span>No</span></h5>
+						<h5>Range: <span>South-Southeast Asia</span></h5>
+					</div>
 				</div>
 				<div class="row">
-					<div class="gbox col-lg-4 col-6 mb-2">
-						<a href="snakefo.html#retic" target="snakeshow">
-							<img src="assets/images/retic.jpg" data-toggle="tooltip" title="Picture c/o Pixabay"  class="w-100">
-							<h6>Reticulated Python</h6>
-						</a>
-					</div>
-					<div class="gbox col-lg-4 col-6 mb-2">
-						<a href="snakefo.html#phcob" target="snakeshow">						
-							<img src="assets/images/phcob.jpg" data-toggle="tooltip" title="Picture c/o Science Daily"  class="w-100">
-							<h6>Philippine Cobra</h6>
-						</a>
-					</div>
-					<div class="gbox col-lg-4 col-6 mb-2">
-						<a href="snakefo.html#samcob" target="snakeshow">
-							<img src="assets/images/samarcobsm.jpg" data-toggle="tooltip" title="Picture c/o Pestpedia" class="w-100">
-							<h6>Samar Cobra</h6>
-						</a>
-					</div>
-					<div class="gbox col-lg-4 col-6 mb-2">
-						<a href="snakefo.html#rat" target="snakeshow">
-							<img src="assets/images/rat.jpg" data-toggle="tooltip" title="Picture c/o Pixabay" class="w-100">
-							<h6>Red-tailed Rat Snake</h6>
-						</a>
-					</div>
-					<div class="gbox col-lg-4 col-6 mb-2">
-						<a href="snakefo.html#viper" target="snakeshow">
-							<img src="assets/images/pitviper.jpg" data-toggle="tooltip" title="Picture c/o Pixabay" class="w-100">
-							<h6>Pit Vipers</h6>
-						</a>
-					</div>
-					<div class="gbox col-lg-4 col-6 mb-2">
-						<a href="snakefo.html#krait" target="snakeshow">
-							<img src="assets/images/seakrait.jpg" data-toggle="tooltip" title="Picture c/o Wikipedia" class="w-100">
-							<h6>Sea Kraits</h6>
-						</a>
+					<div class="col-12">
+						<p>The reticulated python is the largest snake in the world in terms of length, contested only by the anaconda of South America and the rock pythons of Africa. While potentially dangerous, they are not as deadly as venomous snakes. Still, they are one of the snake species who are known to prey on humans.</p>
+						<p>Hunting as well as thriving demand in the pet trade for these animals - due to their beautiful exotic color possibilities - reticulated python populations have declined and the species has been classified as "Endangered."</p>
 					</div>
 				</div>
 			</div>
-			<div id="galframe" class="col-md-6 mt-md-0 mb-2 col-12 embed-responsive embed-responsive-16by9 animated fadeInRight delay4">
-				<iframe src="snakefo.html" allowtransparency="true" name="snakeshow" scrolling="yes" class="embed-responsive-item"></iframe>
-			</div>		
+		</div>
+	</div>
+
+	<div id="phcobmod" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="row">
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+					<h3>Philippine Cobra</h3>
+					<div class="col-md-6 col-7 order-2">
+						<img src="assets/images/phcob.jpg" class="snakepic">
+						<p>Image courtesy of <a href="https://steemit.com/science/@zam398/science-daily-the-philippine-cobra-deadliest-cobra-among-the-planet?sort=new" target="_blank">Science Daily</a></p>
+					</div>
+					<div class="col-md-6 col-5 order-1">
+						<h5>Local name: <span>'Ulopong'</span></h5>					
+						<h5>Classification: <span>Near Threatened</span></h5>
+						<h5>Endemic: <span>Yes</span></h5>
+						<h5>Range: <span>Northern Luzon</span></h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<p>The Philippine cobra is famously said to have one of the most potent venom in the world. Their venom is a powerful neurotoxin that affects the respiratory system, and a bite is potentially deadly to humans.</p>
+						<p>Like other cobras, the Philippine cobra is able to form a hood when threatened. It also possesses the ability to spit venom up to three meters away.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="srcobmod" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="row">
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+					<h3>Samar Cobra</h3>
+					<div class="col-md-6 col-7 order-2">
+						<img src="assets/images/samarcobsm.jpg" class="snakepic">
+						<p>Image courtesy of Pestpedia</p>
+					</div>
+					<div class="col-md-6 col-5 order-1">
+						<h5>Local name: <span>'Agawason'</span></h5>	
+						<h5>Classification: <span>Least Concern</span></h5>
+						<h5>Endemic: <span>Yes</span></h5>
+						<h5>Range: <span>Visayas and Mindanao</span></h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<p>The Samar Cobra is close relative to the Philippine cobra. Like it's cousin, it possesses strong venom and the ability to spit a considerable distance. The main difference is in the coloration and range, with the Philippine cobra found in the northern areas of the country and the Samar cobra being found in the southern islands. Although technically two different species of snake, they are similar enough that both are referred to as cobras.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="ratmod" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="row">
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+					<h3>Red-tailed Racer</h3>
+					<div class="col-md-6 col-7 order-2">
+						<img src="assets/images/rat.jpg" class="snakepic">
+						<p>Image courtesy of Pixabay</p>
+					</div>
+					<div class="col-md-6 col-5 order-1">
+						<h5>Classification: <span>Least Concern</span></h5>
+						<h5>Endemic: <span>No</span></h5>
+						<h5>Range: <span>Southeast Asia</span></h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<p>A relatively harmless, if not snappy, snake, the Red-tailed Racer (or Red-tailed Green Rat Snake) is often encountered and killed on sight due to how easy it is to mistake from the deadlier Pit Viper at a distance. Unlike a viper, the venom of a rat snake is harmless to humans, while populations of the animal are beneficial to keep around particularly near farmlands to control the population of mice.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="vipermod" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="row">
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+					<h3>Pit Vipers</h3>
+					<div class="col-md-6 col-7 order-2">
+						<img src="assets/images/pitviper.jpg" class="snakepic">
+						<p>Image courtesy of Pixabay</p>
+					</div>
+					<div class="col-md-6 col-5 order-1">
+						<h5>Classification: <span>Diverse</span></h5>
+						<h5>Endemic: <span>No</span></h5>
+						<h5>Range: <span>~</span></h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+					<p>Pit vipers in the Philippines encompass a wide-range of species with several unifying qualities. They are considered hazards in places like agriculture fields due to their tendency to hide in grass, bushes, or tree branches and striking unaware workers. They have triangular heads which allow them to store and deliver more venom in a single bite. While their venom may not be the most potent among snake species, they are still capable of delivering a fatal bite.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="kraitmod" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="row">
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+					<h3>Banded Krait</h3>
+					<div class="col-md-6 col-7 order-2">
+						<img src="assets/images/seakrait.jpg" class="snakepic">
+						<p>Image courtesy of Wikipedia</p>
+					</div>
+					<div class="col-md-6 col-5 order-1">
+						<h5>Classification: <span>Least Concern</span></h5>
+						<h5>Endemic: <span>No</span></h5>
+						<h5>Range: <span>Oceans</span></h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+					<p>Banded kraits are a common sight in Philippine salt water. Although their venom is potentially deadly, they are very shy and normally prefer to swim away rather than bite a person. Incidents involving this snake usually involve fishnets, which cause the snake to panic when it finds itself trapped.</p>
+					<p>Sea snake acts much faster than other snake venom. This is due to the snakes themselves needing to kill fish quickly, as if the venom were slower the fish would be able to swim much farther than the snake could be able to follow.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
 		</div>		
 	</div>
 

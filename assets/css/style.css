@@ -296,20 +296,43 @@ figure.doc img {
 button[data-dismiss="modal"] span {
 	position: absolute;
 	top:1%;
-	left: .5%;
-	background-color: rgb(250,235,215);
+	right: .5%;
+	color: rgb(51, 25, 0);
 }
 
 /*gallery*/
 
 #gallmain {
-	padding-top: 7.5vh;
-	height: 70vh;
+	padding-top: 2.5vh;
+	height: 80vh;
 	overflow: scroll;
 }
 
 .snakeshow {
 	padding: 0;
+}
+
+.snakepic {
+	width: 100%;
+}
+
+.gbox {
+	text-align: center;
+}
+
+.gbox img:hover {
+	border-image: radial-gradient(rgb(51, 25, 0), rgba(51, 25, 0, .45));
+	border-image-slice: 1;
+	border-width: 4px;
+}
+
+.modal {
+	transform: translateY(25%);
+}
+
+.modal-content {
+	padding: 5%;
+	background-color: rgb(250,235,215);
 }
 
 
@@ -407,7 +430,7 @@ label {
 	}
 
 	#galleryseparator {
-		border-right: 2px solid rgb(51, 25, 0);
+		/*border-right: 2px solid rgb(51, 25, 0);*/
 	}
 
 }
@@ -669,12 +692,12 @@ label {
 	}
 
 
-	#galleryseparator {
+/*	#galleryseparator {
 		margin-top: 0;
 		height: 30vh;
 		border-bottom: 2px solid rgb(250,235,215);
 		overflow: scroll;
-	}
+	}*/
 
 	#galframe {
 		height: 47vh;
