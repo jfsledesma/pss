@@ -23,6 +23,11 @@
 
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script>
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip(); 
+	});
+	</script>
 </head>
 <body>
 
@@ -63,31 +68,28 @@
 	<div id="abtmain" class="container p-4 pr-5 pl-5">
 		<div class="row animated fadeInLeft delay-1s">
 			<figure class="col-md-4 col-12 p-0 order-1">
-				<img id="abtpic" src="assets/images/sunglow.jpg">
+				<img id="abtpic" data-toggle="tooltip" title="Picture c/o Apa Agbayani" src="assets/images/sunglow.jpg">
 			</figure>
 			<div class="col-md-8 col-12 order-2">
 				<h3 class="ml-md-3">Who we are</h3>
-				<p class="ml-md-3">We are a non-profit organization of Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p class="ml-md-3">The Philippine Snake Society was founded by a pair of snake enthusiasts who wanted
+				to provide fellow snake lovers with a community to discuss, learn, and share the facts, myths, and importance
+				of snakes in the Philippines. Since the establishment of our Facebook page in 2012, we've grown to a humble
+				following of over 7,000 members and have collaborated with outlets such as Reuters, the Philippine Star,
+				and GMA-7 in spreading awareness about our advocacy.</p>
 			</div>
 		</div>
 
 		<div class="row animated fadeInRight delay-2s">
 			<div class="col-md-8 col-12 p-0 order-md-3 order-4">
 				<h3 class="mr-md-3">What we do</h3>
-				<p class="mr-md-3">We are a non-profit organization of Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p class="mr-md-3">Although we ourselves are not certified researchers or scientists, our communications team
+				keeps up to date with the literature concerning snakes, ranging from pet care to legislation to their role in 
+				environment. We believe in fostering respect between people and snakes, and educating people about proper snake
+				handling, care, and the importance of maintaining their population.</p>
 			</div>
 			<figure class="col-md-4 col-12 order-md-4 order-3 p-0">
-				<img id="abtpic" src="assets/images/sunglow.jpg">
+				<img id="abtpic" data-toggle="tooltip" title="Picture c/o Pixabay" src="assets/images/rainbowtn.jpg">
 			</figure>
 		</div>
 	</div>
@@ -96,12 +98,11 @@
 
 	<footer class="container-fluid">
 		<div class="row pt-2">
-			<div class="col-lg-8 offset-lg-1 col-md-9 col-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. </p>
+			<div class="col-lg-9 offset-lg-1 col-md-9 col-8">
+				<p>&copy; Philippine Snake Society. All images were acquired from open sources; mouseover or tap an image for precise attribution. Thank you to all the photographers!</p>
 			</div>
 			<div class="socfoot col-lg-2 col-md-3 col-4 mt-0 ml-auto">
-				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.facebook.com/PhilippineSnakeSociety/" target="_blank"><i class="fab fa-facebook"></i></a>
 				<a href="#"><i class="fas fa-envelope-square"></i></a>
 				<a href="#"><i class="fab fa-github-square"></i></a>
 			</div>

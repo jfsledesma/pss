@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
+
 .hbrand {
 	color: rgb(183, 149, 11);
 	transition: color .75s;
@@ -203,6 +204,10 @@ nav#brandnav.homepage {
 	height: 10vh;
 }
 
+nav#brandnav.landing {
+	height: 10vh;
+}
+
 /*about*/
 	
 #abtmain {
@@ -227,6 +232,20 @@ li {
 
 .faqhead {
 	text-align: center;
+}
+
+#faqwrap .card, .card-header {
+	border-top: 1px solid rgba(175, 96, 26, .35);
+	border-left: 1px solid rgba(175, 96, 26, .35);
+	border-right: 1px solid rgba(175, 96, 26, .35);
+}
+
+#faqwrap .card-header {
+	border-bottom: 1px solid rgba(175, 96, 26, .35);
+}
+
+#faqwrap .card {
+	background-color: rgba(255,255,255,.65);
 }
 
 li a {
@@ -262,6 +281,23 @@ button[data-target*="#ans"]:hover {
 
 div[id*="ques"]{
 	overflow: scroll;
+}
+
+figure.doc {
+	float: left;
+	text-align: center;
+	color: rgb(51, 25, 0);
+}
+
+figure.doc img {
+	width: 100%;
+}
+
+button[data-dismiss="modal"] span {
+	position: absolute;
+	top:1%;
+	left: .5%;
+	background-color: rgb(250,235,215);
 }
 
 /*gallery*/

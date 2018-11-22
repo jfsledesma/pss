@@ -23,6 +23,12 @@
 
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script>
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip(); 
+	});
+	</script>
 </head>
 <body>
 	<nav id="brandnav" class="navbar navbar-visible-md navbar-light p-0 pb-0">
@@ -67,37 +73,37 @@
 				<div class="row">
 					<div class="gbox col-lg-4 col-6 mb-2">
 						<a href="snakefo.html#retic" target="snakeshow">
-							<img src="assets/images/retic.jpg" class="w-100">
+							<img src="assets/images/retic.jpg" data-toggle="tooltip" title="Picture c/o Pixabay"  class="w-100">
 							<h6>Reticulated Python</h6>
 						</a>
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
 						<a href="snakefo.html#phcob" target="snakeshow">						
-							<img src="assets/images/phcob.jpg" class="w-100">
+							<img src="assets/images/phcob.jpg" data-toggle="tooltip" title="Picture c/o Science Daily"  class="w-100">
 							<h6>Philippine Cobra</h6>
 						</a>
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
 						<a href="snakefo.html#samcob" target="snakeshow">
-							<img src="assets/images/samarcobsm.jpg" class="w-100">
+							<img src="assets/images/samarcobsm.jpg" data-toggle="tooltip" title="Picture c/o Pestpedia" class="w-100">
 							<h6>Samar Cobra</h6>
 						</a>
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
 						<a href="snakefo.html#rat" target="snakeshow">
-							<img src="assets/images/rat.jpg" class="w-100">
+							<img src="assets/images/rat.jpg" data-toggle="tooltip" title="Picture c/o Pixabay" class="w-100">
 							<h6>Red-tailed Rat Snake</h6>
 						</a>
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
 						<a href="snakefo.html#viper" target="snakeshow">
-							<img src="assets/images/pitviper.jpg" class="w-100">
+							<img src="assets/images/pitviper.jpg" data-toggle="tooltip" title="Picture c/o Pixabay" class="w-100">
 							<h6>Pit Vipers</h6>
 						</a>
 					</div>
 					<div class="gbox col-lg-4 col-6 mb-2">
 						<a href="snakefo.html#krait" target="snakeshow">
-							<img src="assets/images/seakrait.jpg" class="w-100">
+							<img src="assets/images/seakrait.jpg" data-toggle="tooltip" title="Picture c/o Wikipedia" class="w-100">
 							<h6>Sea Kraits</h6>
 						</a>
 					</div>
@@ -114,12 +120,11 @@
 
 	<footer class="container-fluid">
 		<div class="row pt-2">
-			<div class="col-lg-8 offset-lg-1 col-md-9 col-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. </p>
+			<div class="col-lg-9 offset-lg-1 col-md-9 col-8">
+				<p>&copy; Philippine Snake Society. All images were acquired from open sources; mouseover or tap an image for precise attribution. Thank you to all the photographers!</p>
 			</div>
 			<div class="socfoot col-lg-2 col-md-3 col-4 mt-0 ml-auto">
-				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.facebook.com/PhilippineSnakeSociety/" target="_blank"><i class="fab fa-facebook"></i></a>
 				<a href="#"><i class="fas fa-envelope-square"></i></a>
 				<a href="#"><i class="fab fa-github-square"></i></a>
 			</div>
