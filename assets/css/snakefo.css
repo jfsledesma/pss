@@ -52,7 +52,7 @@ img {
 button[data-dismiss="modal"] span {
 	position: absolute;
 	top:1%;
-	right: .5%;
+	left: .5%;
 	background-color: rgb(250,235,215);
 }
 

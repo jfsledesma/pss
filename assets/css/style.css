@@ -637,12 +637,14 @@ label {
 	}
 
 	#galframe {
-		height: 70vh;
+		height: 47vh;
 		position: relative;
 	}
 
 	#galframe iframe {
 		position: absolute;
+		overflow: scroll;
+
 	}
 
 	footer {
