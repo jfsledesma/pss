@@ -569,7 +569,7 @@ label {
 
 	#jlanding {
 		height: 60vh;
-		margin-top: 10vh;
+		margin-top: 20vh;
 		width: 100%;
 	}
 
@@ -664,7 +664,7 @@ label {
 	}
 
 	#mobmain {
-		background-color: rgba(250,235,215, .35);
+		background-color: rgba(250,235,215, .65);
 		min-height: 80vh;
 		overflow: scroll;
 	}
