@@ -223,7 +223,7 @@ nav#brandnav.landing {
 /*faq*/
 
 .faqsc {
-	width: 50vw;
+	width: 80%;
 }
 
 li {
@@ -579,6 +579,10 @@ label {
 	nav#mnav {
 		height: 12vh;
 		z-index: 100;
+	}
+
+	.faqsc {
+		width: 90%;
 	}
 
 	.navbar-nav {
