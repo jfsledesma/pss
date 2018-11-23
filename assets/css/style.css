@@ -65,10 +65,11 @@ iframe {
 
 #jlanding {
 	background-color: rgba(250,235,215,.85);
+	box-shadow: 1.5px 2.5px 4px 1px rgb(51, 25, 0);
 	text-align: center;	
 	width: 60vw;
 	height: 40vh;
-	margin-top: 17.5vh;
+	margin-top: 25vh;
 }
 
 #jlanding a {
@@ -179,6 +180,11 @@ iframe {
 
 #main {
 	height: 80vh;
+	overflow: scroll;
+}
+
+#mainlanding {
+	height: 100vh;
 	overflow: scroll;
 }
 
@@ -453,10 +459,20 @@ label {
 		box-shadow: 2px 2px rgba(249, 231, 159, .65);
 	}
 
+	.lwrapper {
+		position: relative;
+		transform: translateY(60%);
+	}
+
 	#jlanding h2, h3 {
 		color: rgb(51, 25, 0);
 		width: 100%;
-		font-size: 16px;
+		font-size: 24px;
+	}
+
+	#landbutton {
+		padding: 2%;
+		width: 25%;
 	}
 
 	.center {
