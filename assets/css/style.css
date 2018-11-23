@@ -188,7 +188,7 @@ iframe {
 }
 
 ::-webkit-scrollbar {
-display: none;
+	display: none;
 }
 
 footer {
@@ -678,8 +678,8 @@ label {
 		text-align: right;
 		opacity: 1;
 		background-image: linear-gradient(to left, rgba(175, 96, 26, 1), rgba(175, 96, 26, .10));
-		bottom: -2%;
-		right: 1.5%;
+		bottom: -4%;
+		right: 0%;
 		width: 80vw;
 		color: rgb(250,235,215);
 		font-size: 8vw;
