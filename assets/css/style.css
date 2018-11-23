@@ -539,9 +539,9 @@ label {
 		height: 78vh;
 	}
 
-	#mobmain h1, #mobmain h2, #mobmain h3, #mobmain h4, #mobmain h5, #mobmain h6 {
+	#mobmain h1, #mobmain h2, #mobmain h4, #mobmain h5, #mobmain h6 {
 		font-family: 'Libre Baskerville', serif;
-		color: rgb(250,235,215);
+		color: rgb(51, 25, 0);
 		width: 100%;
 	}
 
@@ -638,13 +638,13 @@ label {
 	}
 
 	#mobmain {
-		background-color: rgba(175, 96, 26, .55);
+		background-color: rgba(250,235,215, .55);
 		min-height: 80vh;
 		overflow: scroll;
 	}
 
 	#mobmain p {
-		color: rgb(250,235,215);
+		color: rgb(51, 25, 0);
 	}
 
 	.welcomebtn {
