@@ -638,7 +638,7 @@ label {
 	}
 
 	#mobmain {
-		background-color: rgba(250,235,215, .55);
+		background-color: rgba(250,235,215, .35);
 		min-height: 80vh;
 		overflow: scroll;
 	}
