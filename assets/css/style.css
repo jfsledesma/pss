@@ -672,13 +672,13 @@ label {
 	}
 
 	#jlanding {
-		height: 60vh;
-		margin-top: 20vh;
+		height: 66.67vh;
+		margin-top: 16.66vh;
 		width: 100%;
 	}
 
 	#jlanding h3 {
-		margin-top: 25%;
+		margin-top: 0;
 		color: rgb(249, 231, 159);
 		width: 100%;
 		font-size: 20px;
