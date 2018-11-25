@@ -26,9 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 .bghl {
 	background-color: rgb(175, 96, 26);
 	border-radius: 5px;
-	padding: 2px;
+	padding: 1px 2px 1px 2px;
 	font-family: 'Baloo', cursive;
 	color: rgb(249, 231, 159);
+	box-shadow: 1px 2px 2px 0px rgb(51, 25, 0);
 }
 
 #logohome {
