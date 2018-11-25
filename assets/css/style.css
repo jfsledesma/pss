@@ -564,7 +564,7 @@ label {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Baloo', cursive;
-		color: rgb(51, 25, 0);
+		color: rgb(250,235,215);
 		width: 100%;
 	}
 
@@ -574,7 +574,7 @@ label {
 
 	#mobmain h1, #mobmain h2, #mobmain h4, #mobmain h5, #mobmain h6 {
 		font-family: 'Baloo', cursive;
-		color: rgb(51, 25, 0);
+		color: rgb(250,235,215);
 		width: 100%;
 	}
 
@@ -586,18 +586,18 @@ label {
 
 	#jlanding h3 {
 		margin-top: 25%;
-		color: rgb(51, 25, 0);
+		color: rgb(250,235,215);
 		width: 100%;
 		font-size: 20px;
 	}
 
 	#jlanding h1 {
-		color: rgb(51, 25, 0);
+		color: rgb(250,235,215);
 		font-size: 32px;
 	}
 
 	#landbutton {
-		border: 1px solid rgb(51, 25, 0);
+		border: 1px solid rgb(250,235,215);
 		font-size: 20px;
 		border-radius: 2.5%;
 		width: 80%;
@@ -613,7 +613,7 @@ label {
 	}
 
 	.navbar-nav {
-		background-color: rgb(250,235,215);
+		background-color: rgb(51, 25, 0);
 	}
 
 
@@ -675,7 +675,7 @@ label {
 	}
 
 	#mobmain {
-		background-color: rgba(250,235,215, .65);
+		background-color: rgba(51, 25, 0, .65);
 		min-height: 80vh;
 		overflow: scroll;
 	}
