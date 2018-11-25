@@ -1,39 +1,40 @@
 /*Fonts and colors*/
 
-	/*font-family: 'Libre Baskerville', serif;
+	/*font-family: 'Baloo', cursive;
 	font-family: 'Open Sans', sans-serif;	*/
 
-	/*PSS yellow rgba(249, 231, 159, .65)*/
-	/*Off white 250,235,215*/
-	/*PSS Umber 175, 96, 26*/
-	/*PSS Dark Gold 183, 149, 11*/
-	/*PSS Brown rgb(51, 25, 0)*/
+	/*PSS yellow rgba(249, 231, 159, .65) #f9e79f*/
+	/*Off white 250,235,215 #faebd7*/
+	/*PSS Umber 175, 96, 26 #af601a*/
+	/*PSS Dark Gold 183, 149, 11 #b7950b*/
+	/*PSS Brown rgb(51, 25, 0) #331900*/
 
 * {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
-	color: rgb(51, 25, 0);
+	color: rgb(250,235,215);
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Libre Baskerville', serif;
-	color: rgb(51, 25, 0);
+	font-family: 'Baloo', cursive;
+	color: rgb(250,235,215);
+	text-shadow: 1px 2px rgb(51, 25, 0);
 	width: 100%;
 }
 
 
 .hbrand {
-	color: rgb(183, 149, 11);
+	color: rgb(250,235,215);
 	transition: color .75s;
 }
 
 .hbrand:hover > i {
-	color: rgb(51, 25, 0);
+	color: rgb(250,235,215);
 }
 
 a > h1.homeactive, h1.homeactive i {
-	color: rgb(51, 25, 0);
+	color: rgb(250,235,215);
 }
 
 	/*a > h1.homeactive {
@@ -46,6 +47,7 @@ a.nav-link:hover {
 
 a.divwrapper {
 	width: 100%;
+	color:rgb(250,235,215);
 }
 
 a.active {
@@ -60,12 +62,12 @@ iframe {
 }
 
 .wshader {
-	background-color: rgba(250,235,215,.65);	
+	background-color: rgba(175, 96, 26, .85);	
 }
 
 #jlanding {
-	background-color: rgba(250,235,215,.85);
-	box-shadow: 1.5px 2.5px 4px 1px rgb(51, 25, 0);
+	background-color: rgba(51, 25, 0,.85);
+	box-shadow: 1.5px 2.5px 4px 1px rgb(175, 96, 26);
 	text-align: center;	
 	width: 60vw;
 	height: 40vh;
@@ -73,7 +75,7 @@ iframe {
 }
 
 #jlanding a {
-	color: rgb(51, 25, 0);
+	color: rgb(250,235,215);
 	font-size: 16px;
 }
 
@@ -98,7 +100,7 @@ iframe {
 
 #landbutton {
 	font-size: 6em;
-	border: 1px solid rgb(51, 25, 0);
+	border: 1px solid rgb(250,235,215);
 	border-radius: 2.5%;
 	width: 20%;
 }
@@ -108,19 +110,19 @@ iframe {
 }
 
 #landbutton:hover {
-	color: rgb(250,235,215);
-	background-color: rgb(51, 25, 0);
+	background-color: rgb(250,235,215);
+	color: rgb(51, 25, 0);
 }
 
 #greeter {
 	position: absolute;
-	box-shadow: 1px 1px rgba(249, 231, 159, .65);
-	bottom: 5vh;
+	box-shadow: 1px 2px 2px 2px rgba(51, 25, 0, .65);
+	bottom: 10vh;
 }
 
-#bg {
+body {
 	padding: 0;
-	background-image: url("../images/burm.jpg");
+	background-image: url("../images/retbg.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: 100vw 100vh;
@@ -132,10 +134,10 @@ iframe {
 
 .thumb {
 	width: 100%;
-	opacity: .6;
+	opacity: .75;
 	transition: opacity .75s;
 /*	border: 2px solid rgb(249, 231, 159);*/
-	box-shadow: 2px 2px rgba(249, 231, 159, .65);
+	box-shadow: 2px 2px 1px 2px rgba(51, 25, 0, .65);
 	cursor: pointer;
 }
 
@@ -165,7 +167,7 @@ iframe {
 }
 
 .navbar {
-	background-color: rgba(249, 231, 159, .85);
+	background-color: rgba(51, 25, 0, .85);
 	height: 5vh;
 }
 
@@ -174,22 +176,22 @@ iframe {
 }
 
 .navbar-brand {
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Baloo', cursive;
 	font-style: italic;
 }
 
 #main {
-	height: 80vh;
+	height: 90vh;
 	overflow: scroll;
 }
 
 #mainlanding {
-	height: 100vh;
+	height: 90vh;
 	overflow: scroll;
 }
 
 #mainhome {
-	height: 80vh;
+	height: 90vh;
 	overflow: scroll;
 }
 
@@ -198,11 +200,12 @@ iframe {
 }
 
 footer {
-	background-color: rgb(183, 149, 11);
+	background-image: linear-gradient(to top, rgb(51, 25, 0), rgba(51, 25, 0, .9), rgba(51, 25, 0, .66), rgba(51, 25, 0,0));
 	color: rgb(250,235,215);
 	position: fixed;
 	height: 10vh;
 	bottom: 0;
+	padding-top: 5vh;
 	overflow: scroll;
 }
 
@@ -215,15 +218,16 @@ nav#brandnav.landing {
 }
 
 /*about*/
-	
 #abtmain {
-	background-color: rgba(250,235,215,.75);
-	height: 80vh;
+	background-color: rgba(175, 96, 26,.85);
+	height: 90vh;
 	overflow: scroll;	
 }
 
 #abtpic {
 	width: 100%;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px rgb(51, 25, 0);
 }
 
 /*faq*/
@@ -255,24 +259,15 @@ li {
 }
 
 li a {
-	color: rgb(175, 96, 26);
+	color: rgb(250,235,215);
 	transition: color .75s;
 }
 
 li a:hover {
-	color: rgb(51, 25, 0);
+	color: rgb(249, 231, 159);
 	transition: color .75s;
 }
 
-li a {
-	color: rgb(175, 96, 26);
-	transition: color .75s;
-}
-
-li a:hover {
-	color: rgb(51, 25, 0);
-	transition: color .75s;
-}
 
 button[data-target*="#ans"]{
 	color: rgb(175, 96, 26);
@@ -310,7 +305,7 @@ button[data-dismiss="modal"] span {
 
 #gallmain {
 	padding-top: 2.5vh;
-	height: 80vh;
+	height: 90vh;
 	overflow: scroll;
 }
 
@@ -327,19 +322,28 @@ button[data-dismiss="modal"] span {
 }
 
 .gox figure {
-	border: 2px solid rgb(51, 25, 0);
+	border: 2px solid rgb(250,235,215);
+	border-radius: 15px;
+}
+
+.gox img{
+	border-radius: 15px 15px 0 0;
 }
 
 .gox img:hover {
-	border-image: radial-gradient(rgb(51, 25, 0), rgba(51, 25, 0, .45));
-	border-image-slice: 1;
-	border-width: 4px;
+	border: 4px dashed rgba(250,235,215, .45);
 }
 
 .modal h3 {
 	background-image: linear-gradient(to right, rgb(51, 25, 0), rgba(51, 25, 0, 1), rgba(51, 25, 0, .65), rgba(51, 25, 0, 0));
 	color: rgb(250,235,215);
+	text-shadow: none;
 	padding: 1%;	
+}
+
+.modal h5, .modal p, .modal span {
+	color: rgb(51, 25, 0);
+	text-shadow: none;
 }
 
 
@@ -363,6 +367,8 @@ label {
 
 #conwrap {
 	min-height: 40vh;
+	border-radius: 10px;
+	box-shadow: 2px 1px 2px 2px rgb(51, 25, 0);
 }
 
 #conwrap h3 {
@@ -370,36 +376,41 @@ label {
 }
 
 #conwrap a {
-	color: rgb(175, 96, 26);
+	color: rgb(249, 231, 159);
 	transition: color .75s;
+	font-weight: bold;
 }
 
 #conwrap a:hover {
-	color: rgb(51, 25, 0);
+	color: rgb(250,235,215);
 	transition: color .75s;
 }
 
 #contactform input, textarea {
 	background-color: rgba(250,250,250, 1);
 	width: 100%;
-	border-radius: 0;
+	border-radius: 2px;
 	padding: 1%;
 }
 
 #contactform button {
 	border-radius: 0%;
 	margin-left: 2px;
+	color: rgb(51, 25, 0);
+	border-radius: 4px;
 	background-color: rgba(250,235,215, 1);
 	border: 2px solid rgba(250,235,215, .15);
 }
 
 #contactform button.formclear {
 	border: none;
+	color: rgba(250,235,215, 1);
 	background-color: transparent;
 }
 
 .socfoot a {
-	font-size: 28px;
+	font-size: 32px;
+	margin-right: 6px;
 }
 
 #tabcarousel {
@@ -417,12 +428,12 @@ label {
 
 	#dbrand {
 		font-size: 160%;
-		color: rgb(183, 149, 11);
+		color: rgb(249, 231, 159);
 		transition: color .75s;
 	}
 
 	#dbrand:hover {
-		color: rgb(51, 25, 0);
+		color: rgb(250,235,215);
 		transition: color .75s;
 	}
 
@@ -511,7 +522,7 @@ label {
 
 
 	#jlanding h1 {
-		color: rgb(51, 25, 0);
+		color: rgb(250,235,215);
 		width: 100%;
 		font-size: 28px;
 	}
@@ -552,7 +563,7 @@ label {
 @media only screen and (max-width: 425px) {
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Libre Baskerville', serif;
+		font-family: 'Baloo', cursive;
 		color: rgb(51, 25, 0);
 		width: 100%;
 	}
@@ -562,7 +573,7 @@ label {
 	}
 
 	#mobmain h1, #mobmain h2, #mobmain h4, #mobmain h5, #mobmain h6 {
-		font-family: 'Libre Baskerville', serif;
+		font-family: 'Baloo', cursive;
 		color: rgb(51, 25, 0);
 		width: 100%;
 	}
@@ -674,7 +685,7 @@ label {
 	}
 
 	.welcomebtn {
-		font-family: 'Libre Baskerville', serif;
+		font-family: 'Baloo', cursive;
 		background-color: rgba(249, 231, 159, .85);
 	}
 
