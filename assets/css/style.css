@@ -476,7 +476,7 @@ label {
 	}
 
 	#jlanding h2, h3 {
-		color: rgb(51, 25, 0);
+		color: rgb(250,235,215);
 		width: 100%;
 		font-size: 24px;
 	}
@@ -500,6 +500,10 @@ label {
 
 	#mbrand {
 		display: none;
+	}
+
+	#greeter {
+		height: 15vh;
 	}
 
 /*
@@ -534,6 +538,10 @@ label {
 
 	#main {
 		height: 80vh;
+	}
+
+	#conwrap{
+		min-height: 100vh;
 	}
 
 
@@ -589,6 +597,11 @@ label {
 		color: rgb(250,235,215);
 		width: 100%;
 		font-size: 20px;
+	}
+
+
+	#conwrap{
+		min-height: 100vh;
 	}
 
 	#jlanding h1 {
@@ -681,7 +694,7 @@ label {
 	}
 
 	#mobmain p {
-		color: rgb(51, 25, 0);
+		color: rgb(250,235,215);
 	}
 
 	.welcomebtn {
