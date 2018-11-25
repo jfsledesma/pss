@@ -470,6 +470,14 @@ label {
 	display: none;
 }
 
+.carth {
+	background-color: rgb(183, 149, 11)
+}
+
+#dtcar img {
+	width: 100%;
+}
+
 
 /*mqueries*/
 
