@@ -195,7 +195,7 @@ body {
 	overflow: scroll;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar {	
 	display: none;
 }
 
@@ -597,7 +597,7 @@ label {
 	}
 
 	#mobmain {
-		min-height: 80vh;
+		min-height: 100vh;
 	}
 
 	#mobmain h1, #mobmain h2, #mobmain h4, #mobmain h5, #mobmain h6 {
@@ -622,6 +622,7 @@ label {
 
 	#conwrap{
 		min-height: 100vh;
+		height: auto;
 	}
 
 	#jlanding h1 {
@@ -647,6 +648,11 @@ label {
 
 	.navbar-nav {
 		background-color: rgb(51, 25, 0);
+	}
+
+	#main {
+		min-height: 90vh;
+		height: auto;
 	}
 
 
@@ -685,6 +691,10 @@ label {
 
 	h6 {
 		font-family: 'Open Sans', sans-serif;
+	}
+
+	#abtmain {
+		height: auto;
 	}
 
 	#brandnav {
