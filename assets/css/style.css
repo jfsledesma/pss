@@ -706,6 +706,10 @@ label {
 		background-color: rgb(51, 25, 0);
 	}
 
+	a.nav-link{
+		text-align: center;
+	}
+
 	#main {
 		min-height: 90vh;
 		height: auto;
@@ -858,6 +862,6 @@ label {
 	footer {
 		position: static;
 		opacity: 1;
-		background-color: rgba(51, 25, 0);
+		background-color: rgb(51, 25, 0);
 	}
 }
