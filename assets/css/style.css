@@ -200,13 +200,19 @@ body {
 }
 
 footer {
-	background-image: linear-gradient(to top, rgb(51, 25, 0), rgba(51, 25, 0, .9), rgba(51, 25, 0, .66), rgba(51, 25, 0,0));
+	background-image: linear-gradient(to top, rgb(51, 25, 0), rgba(51, 25, 0,0));
 	color: rgb(250,235,215);
 	position: fixed;
 	height: 10vh;
 	bottom: 0;
 	padding-top: 5vh;
+	opacity: .5;
+	transition: opacity 1s;
 	overflow: scroll;
+}
+
+footer:hover {
+	opacity: 1;
 }
 
 nav#brandnav.homepage {
@@ -771,5 +777,6 @@ label {
 
 	footer {
 		position: static;
+		background-color: rgba(51, 25, 0,.75);
 	}
 }
