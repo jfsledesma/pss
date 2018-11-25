@@ -150,7 +150,7 @@ iframe {
 
 body {
 	padding: 0;
-	background-image: url("../images/retbg.jpg");
+	background-image: url("../images/tintedret.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: 100vw 100vh;
@@ -523,6 +523,12 @@ label {
 	}
 
 
+	#logohome {
+		height: 8vh;
+		width: 100%;
+	}
+
+
 	#dbrand > #logo {
 		height: 6vh;
 		width: 50%;
@@ -608,11 +614,11 @@ label {
 		text-align: right;
 		opacity: 1;
 		background-image: linear-gradient(to left, rgba(175, 96, 26, 1), rgba(175, 96, 26, .10));
-		bottom: -3%;
+		bottom: -8px;
 		right: 0%;
 		width: 50vw;
 		color: rgb(249, 231, 159);
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	#greeter {
