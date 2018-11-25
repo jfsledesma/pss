@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
-.highlight {
+.bghl {
 	background-color: rgb(175, 96, 26);
 	border-radius: 5px;
 	padding: 2px;
