@@ -619,7 +619,15 @@ label {
 	}
 
 	#main {
-		height: 90vh;
+		height: 80vh;
+	}
+
+	#mainhome {
+		height: 80vh;
+	}
+
+	#abtmain {
+		height: 80vh;
 	}
 
 	#conwrap{
@@ -659,6 +667,13 @@ label {
 		opacity: .85;
 		transition: opacity 1s;
 		overflow: scroll;
+	}
+
+
+	footer {
+		position: static;
+		opacity: 1;
+		background-color: rgb(51, 25, 0);
 	}
 }
 
