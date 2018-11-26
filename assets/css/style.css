@@ -243,6 +243,7 @@ footer {
 }
 
 footer:hover {
+	background-image: linear-gradient(to top, rgb(51, 25, 0), rgba(51, 25, 0,.9), rgba(51, 25, 0,.75));
 	opacity: 1;
 }
 
@@ -649,12 +650,12 @@ label {
 	}
 
 	footer {
-		background-image: linear-gradient(to top, rgb(51, 25, 0), rgba(51, 25, 0,0));
+		background-image: linear-gradient(to top, rgb(51, 25, 0), rgba(51, 25, 0,.33));
 		color: rgb(250,235,215);
 		position: static;
 		height: 10vh;
 		bottom: 0;
-		padding-top: 5vh;
+		padding-top: 1vh;
 		opacity: .85;
 		transition: opacity 1s;
 		overflow: scroll;
