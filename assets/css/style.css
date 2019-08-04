@@ -745,8 +745,7 @@ label {
 	}
 
 	#main {
-		min-height: 80vh;
-		overflow: scroll;
+		height: auto;
 	}
 
 	#mainhome {
