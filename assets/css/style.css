@@ -689,10 +689,6 @@ label {
 		width: 100%;
 	}
 
-	#mobmain {
-		min-height: 100vh;
-	}
-
 	#mobmain h1, #mobmain h2, #mobmain h4, #mobmain h5, #mobmain h6 {
 		font-family: 'Baloo', cursive;
 		color: rgb(249, 231, 159);
@@ -749,9 +745,9 @@ label {
 	}
 
 	#main {
-		min-height: 100vh;
+		min-height: 80vh;
+		overflow: scroll;
 	}
-
 
 	#mainhome {
 		display: none;
@@ -815,7 +811,6 @@ label {
 	}
 
 	#mobmain {
-		background-color: rgba(175, 96, 26, .65);
 		min-height: 80vh;
 		overflow: scroll;
 	}
