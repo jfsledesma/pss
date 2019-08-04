@@ -157,6 +157,7 @@ body {
 	padding: 0;
 	background-image: url("../images/tintedret.jpg");
 	background-attachment: fixed;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100vw 100vh;
 }
@@ -719,7 +720,12 @@ label {
 	}
 
 	body {
-		
+		padding: 0;
+		background-image: url("../images/tintedret.jpg");
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100vw 100vh;
 	}
 
 	#conwrap{
