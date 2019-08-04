@@ -709,7 +709,7 @@ label {
 	}
 
 	#conwrap{
-		height: auto;
+		height: 100vh;
 	}
 
 	#jlanding h1 {
@@ -858,7 +858,7 @@ label {
 		margin: 0;
 		margin-top: 5px;
 		padding: 0;
-		height: auto;
+		height: 100vh;
 		max-width: 100vw;
 	}
 
