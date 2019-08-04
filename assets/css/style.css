@@ -867,7 +867,7 @@ label {
 		margin-top: 5px;
 		padding: 0;
 		height: auto;
-		width: 100vw;
+		width: 100%;
 	}
 
 	#galframe {
@@ -880,7 +880,10 @@ label {
 	#galframe iframe {
 		position: absolute;
 		overflow: scroll;
+	}
 
+	.gox > figure {
+		background-color: rgb(51, 25, 0);
 	}
 
 	.modal h3 {
