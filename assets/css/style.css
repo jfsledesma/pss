@@ -731,6 +731,7 @@ label {
 	}
 
 	nav#mnav {
+		margin: 0;
 		height: 12vh;
 		z-index: 100;
 	}
