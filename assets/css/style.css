@@ -684,11 +684,11 @@ label {
 
 @media only screen and (max-width: 425px) {
 
-	body{
+	/*body{
 		background-color: rgb(175, 96, 26);
 		background-image: none;
 	}
-
+*/
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Baloo', cursive;
 		color: rgb(249, 231, 159);
@@ -817,6 +817,7 @@ label {
 	}
 
 	#mobmain {
+		background-color: rgba(51, 25, 0, 0.65);
 		min-height: 80vh;
 		overflow: scroll;
 	}
